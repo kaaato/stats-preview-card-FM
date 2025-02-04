@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 .page__main {
   max-width: 40.875rem;
   background-color: var(--main-color);
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
 }
 
 .purple {
@@ -95,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .media__img {
   filter: brightness(1.2);
-  border-radius: 10px 10px 0 0;
   aspect-ratio: 654 / 480;
 }
 
@@ -163,7 +163,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: minmax(1px, 33.75rem) minmax(1px, 33.75rem);
     grid-template-rows: min-content;
     gap: 2em;
-    border-radius: 10px 0 0 10px;
   }
 
   .title {
@@ -177,7 +176,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .media__img {
     aspect-ratio: 540 / 446;
-    border-radius: 0 10px 10px 0;
   }
 
   .main__container {
