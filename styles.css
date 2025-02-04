@@ -79,23 +79,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .media {
-  position: relative;
-}
-
-.media::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--contrast-color);
-  mix-blend-mode: multiply;
+  background-color: var(--contrast-color);
 }
 
 .media__img {
-  filter: brightness(1.2);
+  mix-blend-mode: multiply;
+  filter: opacity(0.7);
   aspect-ratio: 654 / 480;
 }
 
