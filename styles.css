@@ -68,9 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-inner {
-  max-width: 40.875rem;
+  max-width: 28.125rem;
   background-color: var(--main-color);
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5, h6 {
 .media__img {
   mix-blend-mode: multiply;
   filter: opacity(0.7);
-  aspect-ratio: 654 / 480;
 }
 
 .main__container {
@@ -126,14 +125,15 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .page__footer { 
-  font-size: 11px; text-align: center; 
+  font-size: 11px; 
+  text-align: center; 
 }
 
 .page__footer a { 
   color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 62.5em) { /* 1000px */
+@media (min-width: 45rem) { 
   .page {
     display: grid;
     place-content: center;
@@ -143,13 +143,12 @@ h1, h2, h3, h4, h5, h6 {
     max-width: initial;
     margin: 0;
     display: grid;
-    grid-template-columns: minmax(1px, 33.75rem) minmax(1px, 33.75rem);
-    grid-template-rows: min-content;
+    grid-template-columns: repeat(2, minmax(0, 33.75rem));
     gap: 2em;
   }
 
   .title {
-    font-size: clamp(1.875rem, 0.708rem + 2.667vw, 2.375rem);
+    font-size: 2.375rem;
   }
 
   .media {
@@ -158,7 +157,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .media__img {
-    aspect-ratio: 540 / 446;
+    block-size: 100%;
+    object-fit: cover;
   }
 
   .main__container {
@@ -171,6 +171,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .list {
     flex-direction: row;
-    gap: 4.5em;
+    gap: clamp(1.5rem, -3.409rem + 10.909vw, 4.5rem);
   }
 }
