@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--main-color);
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .purple {
@@ -130,13 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .page__footer a { 
   color: hsl(228, 45%, 44%); 
-}
-
-@media (min-width: 43.75em) { /* 700px */
-  .main-inner {
-    margin: 0 auto;
-  }
-
 }
 
 @media (min-width: 62.5em) { /* 1000px */
