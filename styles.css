@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6em 1.6em;
 }
 
-.page__main {
+.main-inner {
   max-width: 40.875rem;
   background-color: var(--main-color);
   border-radius: 10px 10px 10px 10px;
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 43.75em) { /* 700px */
-  .page__main {
+  .main-inner {
     margin: 0 auto;
   }
 
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
     place-content: center;
   }
 
-  .page__main {
+  .main-inner {
     max-width: initial;
     margin: 0;
     display: grid;
